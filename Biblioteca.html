@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Biblioteca.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+
+    <h1>Universidade FUVEST</h1>
+
+
+
+    <form action="Biblioteca.php" method="get">  
+
+        <!--Inputs-->
+
+        Digite o nome do livro emprestado: 
+
+        <input type="text" name="h1" class="h1-h2" title="Nome do livro" id="h1">
+        <p></p>
+
+        Digite o nome do usuario: 
+
+        <input type="text" name="h2" class="h1-h2" title="Nome do leitor" id="h2">
+
+        Tipo do leitor:
+
+        <Select class="h1-h2" name="op">
+            <option value="Aluno">Aluno</option>
+            <option value="Professor">Professor</option>
+        </Select>
+
+
+        <br><br>
+
+        Digite o dia do emprestimo: 
+
+        <input type="number" name="h3" min="1" max="31" class="h1-h2" title="Dia que foi emprestado" id="h3">
+        <p></p>
+
+        <audio src="./Audio/late nights.mp3" autoplay volume></audio> 
+
+        <!--Botões-->
+
+        <input type="reset" value="Limpar" class="limpar"><!-- Botão Limpar -->
+        <input type="submit" value="Enviar" class="enviar" onclick="Enviar()"><!-- Botão Enviar -->
+
+    <script>
+        function Enviar() {
+
+            var h1 = document.getElementById("h1").value;
+            var h2 = document.getElementById("h2").value; 
+            var h3 = document.getElementById("h3").value; 
+
+            if (h1=='' | h2=='' | strValue==h2) {
+                event.preventDefault();
+                alert('Digite um valor válido!!');                 
+            }    
+        }    
+
+    </script>
+    </form>
+
+    <div>
+        <a href="https://mail.google.com/mail/u/0/" class="report">Favor informar erros e bugs :)</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* Estilização css */
+
+body {
+    background-image: url('./Fundo/Fundo.jpg');
+    text-align: center;
+    color: #000000;
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+h1 {
+    margin-bottom: 5%;
+    font-family: cursive;
+}
+
+div {
+    margin-top: 60px;
+}
+
+input,select {
+    border-radius: 50px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.limpar {
+    color: red;
+    border: 2px red solid;
+    padding: 10px; 
+    opacity: 70%;
+    display: inline-block;
+    cursor: pointer;    
+    margin-bottom: 10px; 
+    margin-top: 180px;     
+}
+
+.limpar:hover {
+    animation: btn 1s infinite linear; 
+    
+}
+
+.enviar {
+    color: rgb(0, 255, 0);
+    border: 2px rgb(0, 255, 0) solid;
+    padding: 10px;   
+    opacity: 70%; 
+    display: inline-block;  
+    cursor: pointer;
+    margin-bottom: 10px; 
+    margin-top: 180px;         
+}
+
+.enviar:hover {
+    animation: btn 1s infinite linear;    
+}
+
+.h1-h2 {
+    animation: borda 2s infinite linear;
+    padding: 2px;
+    background-color: rgb(148, 148, 148);
+}
+
+/* Animações */
+
+/* Borda dos inputs */
+@keyframes borda {
+    from {
+        border: 1.5px white solid;
+    }
+
+    50% {
+        border: 1.5px rgb(255, 0, 0) solid;
+    }
+
+    to{
+        border: 1.5px white solid;      
+    }
+}
+
+/* Animação de crescimento do limpar/enviar */
+
+@keyframes btn {
+    from {
+        opacity: 100%;
+        padding: 10px;
+    }
+
+    50% { 
+        opacity: 80%; 
+        padding: 12px;                        
+    }
+
+    to {
+        opacity: 100%;    
+        padding: 10px;                  
+    }
+}
